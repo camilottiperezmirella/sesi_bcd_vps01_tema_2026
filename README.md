@@ -36,7 +36,35 @@
 | Acesso | id_perfil | Inteiro | 11 | Identificador do perfil, FK referenciando Perfil (id_perfil) |
 | Acesso | data_inicio | Data | 10 | Data de início do acesso |
 | Acesso | data_fim | Data | 10 | Data de término do acesso |
+| Acesso | status | Texto | 20 | Status do acesso (ex: Ativo, Expirado, Revogado) |
+
 
 ## Dados em CSV: 
 - ![Acesso.csv](./Acesso.csv)
-| Acesso | status | Texto | 20 | Status do acesso (ex: Ativo, Expirado, Revogado) |
+- ![Servidor.csv](./Servidor.csv)
+- ![Conta de Acesso.csv](./Conta de Acesso.csv)
+- ![Usuário.csv](./Usuário.csv)
+- ![perfil.csv](./perfil.csv)
+
+## DDL:
+
+```
+CREATE TABLE perfil_permissao (
+    id_perfil INT AUTO_INCREMENT PRIMARY KEY,
+    nome VARCHAR(100) NOT NULL,
+    descricao VARCHAR(255),
+    nivel_acesso INT NOT NULL
+);
+
+CREATE TABLE acesso (
+    id_acesso INT AUTO_INCREMENT PRIMARY KEY,
+    id_conta INT NOT NULL,
+    id_perfil INT NOT NULL,
+    data_inicio DATE NOT NULL,
+    data_fim DATE,
+    status VARCHAR(20) NOT NULL,
+
+    FOREIGN KEY (id_conta) REFERENCES conta_acesso(id_conta),
+    FOREIGN KEY (id_perfil) REFERENCES perfil_permissao(id_perfil)
+);
+```
