@@ -1,0 +1,11 @@
+id,	nome	hostname	ip	sistema operacional	ambiente
+1,	Servidor Web Desenvolvimento,	web-dev-01,	192.168.10.10,	Linux Ubuntu,	Desenvolvimento
+2,Servidor Banco Desenvolvimento,	db-dev-01,	192.168.10.20,	Linux Ubuntu,	Desenvolvimento
+3, Servidor Aplicação Testes,	app-test-01,	192.168.20.10,	Linux Ubuntu,	Testes
+4,	Servidor Banco Testes,	db-test-01,	192.168.20.2,	Windows Server,	Testes
+5,	Servidor Web Produção,	web-prod-01,	10.0.10.10,	Linux Ubuntu,	Produção
+6,	Servidor Aplicação, Produção	app-prod-01,	10.0.10.20,	Linux Red Hat,	Produção
+7,	Servidor Banco, Produção	db-prod-01,	10.0.10.30,	Linux Red Hat,	Produção
+8,	Servidor Backup,	backup-01,	10.0.20.10,	Windows Server,	Produção
+9,	Servidor Monitoramento,	monitor-01,	10.0.20.2,	Linux Ubuntu,	Produção
+10, Servidor Git,git-01, 192.168.10.30,	Linux Ubuntu,	Desenvolvimento
