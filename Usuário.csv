@@ -1,1 +1,14 @@
 id, nome, email, cargo, departamento, status
+1,	Ana Souza, ana.souza@empresa.com,	Desenvolvedora,	Desenvolvimento,	Ativo
+2,	Bruno Oliveira,	bruno.oliveira@empresa.com,	Analista de Sistemas	TI,	Ativo
+3,	Carlos Santos,	carlos.santos@empresa.com,	Administrador de rede	Infraestrutura,	Ativo
+4,	Daniele Lima,	daniela.lima@empresa.com,	Gerente de TI,	TI,	Ativo
+5, Eduardo Costa,	eduardo.costa@empresa.com,	Desenvolvedor,	Desenvolvimento,	Ativo
+6,	Fernanda Alves,	fernanda.alves@empresa.com,	Analista de segurança,	Segurança da Informação,	Ativo
+7, Gabriel Rocha,	gabriel.rocha@empresa.com,	Analista de suporte,	Suporte,	Ativo
+8,	Helena Martin,	helena.martins@empresa.com,	Administradora de Banco de Dados,	DBA,	Ativo
+9,	Igor Pereira,	igor.pereira@empresa.com, Estágiario,	Desenvolvimento,	Ativo
+10,	Juliana Mendes,	juliana.mendes@empresa.com,	Analista de Sistemas,	TI,	Inativo
+
+
+
