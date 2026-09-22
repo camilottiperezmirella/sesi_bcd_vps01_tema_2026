@@ -1,0 +1,17 @@
+id_conta,	id_usuario,	id_servidor,	login	status,	data_criacao,	data_expiracao
+1,	1,	1,	ana.souza,	Ativa,	10/01/2026,	31/12/2026
+2,	1,	2,	ana.souza,	Ativa,	10/01/2026,	31/12/2026
+3,	2,	3,	bruno.oliveira,	Ativa,	15/01/2026,	31/12/2026
+4,	2,	5,	bruno.oliveira,	Ativa,	15/01/2026,	30/09/2026
+5,	3,	5,	carlos.santos,	Ativa,	05/01/2026,	05/01/2027
+6,	3,	7,	carlos.santos,	Ativa, 05/01/2026,	05/01/2027
+7,	4,	6,	daniela.lima,	Ativa,	20/01/2026,	20/01/2027
+8,	4,	7,	daniela.lima,	Ativa,	20/01/2026,	20/01/2027
+9,	5,	1,	eduardo.costa,	Ativa,	01/02/2026,	31/12/2026
+10,	5,	10,	eduardo.costa, Ativa,	01/02/2026,	31/12/2026
+11,	6,	5,	fernanda.alves,	Ativa,	10/02/2026,	31/12/2026
+12,	6,	9,	fernanda.alves,	Ativa,	10/02/2026,	31/12/2026
+13,	7,	1,	gabriel.rocha,	Ativa,	15/02/2026,	31/10/2026
+14,	8,	7,	helena.martins,	Ativa,	25/01/2026,	25/01/2027
+15,	9,	1,	igor.pereira,	Ativa,	01/03/2026,	30/06/2026
+16,	10,	5,	juliana.mendes,	Inativa,	10/01/2025,	31/12/2025
