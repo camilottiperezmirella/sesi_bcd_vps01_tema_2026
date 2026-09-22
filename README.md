@@ -36,4 +36,7 @@
 | Acesso | id_perfil | Inteiro | 11 | Identificador do perfil, FK referenciando Perfil (id_perfil) |
 | Acesso | data_inicio | Data | 10 | Data de início do acesso |
 | Acesso | data_fim | Data | 10 | Data de término do acesso |
+
+## Dados em CSV: 
+- ![Acesso.csv](./Acesso.csv)
 | Acesso | status | Texto | 20 | Status do acesso (ex: Ativo, Expirado, Revogado) |
