@@ -1,0 +1,7 @@
+id_perfil, nome,	descricao, nivel_acesso
+1,	Leitura,	Acesso somente para consulta de arquivos e informações,	1
+2,	Operador,	Permite execução de tarefas e serviços autorizados,	2
+3, Desenvolvedor,	Acesso para desenvolvimento e manutenção de aplicações,	3
+4,	Administrador,	Acesso administrativo completo ao servidor,	4
+5,	DBA,	Acesso administrativo a bancos de dados,	4
+6,	Auditor,	Acesso para consulta de logs e auditoria,	2
