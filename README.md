@@ -68,3 +68,45 @@ CREATE TABLE acesso (
     FOREIGN KEY (id_perfil) REFERENCES perfil_permissao(id_perfil)
 );
 ```
+## DML: 
+```
+USE gestao_acessos_ti;
+
+INSERT INTO usuario
+(nome, email, cargo, departamento, status)
+VALUES
+('João Silva', 'joao@empresa.com', 'Desenvolvedor', 'TI', 'Ativo'),
+('Maria Souza', 'maria@empresa.com', 'Analista de Sistemas', 'TI', 'Ativo'),
+('Carlos Oliveira', 'carlos@empresa.com', 'Administrador de Redes', 'Infraestrutura', 'Ativo'),
+('Ana Santos', 'ana@empresa.com', 'Estagiária', 'TI', 'Ativo');
+
+INSERT INTO servidor
+(nome, hostname, ip, sistema_operacional, ambiente)
+VALUES
+('Servidor Desenvolvimento', 'SRV-DEV-01', '192.168.1.10', 'Ubuntu Server 24.04', 'Desenvolvimento'),
+('Servidor Testes', 'SRV-TEST-01', '192.168.1.20', 'Windows Server 2022', 'Testes'),
+('Servidor Produção', 'SRV-PROD-01', '192.168.1.30', 'Ubuntu Server 24.04', 'Produção');
+
+INSERT INTO perfil_permissao
+(nome, descricao, nivel_acesso)
+VALUES
+('Leitura', 'Permite apenas visualizar arquivos e informações', 1),
+('Operador', 'Permite visualizar e executar operações', 2),
+('Administrador', 'Permite acesso completo ao servidor', 3);
+
+INSERT INTO conta_acesso
+(id_usuario, id_servidor, login, status, data_criacao, data_expiracao)
+VALUES
+(1, 1, 'joao.silva', 'Ativa', '2026-09-01', NULL),
+(2, 2, 'maria.souza', 'Ativa', '2026-09-05', NULL),
+(3, 3, 'carlos.oliveira', 'Ativa', '2026-09-10', NULL),
+(4, 1, 'ana.santos', 'Ativa', '2026-09-15', '2026-12-15');
+
+INSERT INTO acesso
+(id_conta, id_perfil, data_inicio, data_fim, status)
+VALUES
+(1, 2, '2026-09-01', NULL, 'Ativo'),
+(2, 1, '2026-09-05', NULL, 'Ativo'),
+(3, 3, '2026-09-10', NULL, 'Ativo'),
+(4, 1, '2026-09-15', '2026-12-15', 'Ativo');
+```
